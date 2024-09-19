@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  button {
+    padding: 20px;
+  }
+</style>
+<body>
+<!--
+
+-->
+    <button id="btn">Like</button>
+</body>
+<script>
+  //function: Hàm
+  //addEventListener: Lắng nghe sự kiện click
+  //khi sự kiện click xảy ra thì nó sẽ thực hiện function và hiển thị
+  let btn = document.getElementById("btn");
+  document.getElementById("btn").addEventListener("olick", function(){
+    btn.style.backgroundColor="blue";
+  })
+
+
+</script>
+</html>
