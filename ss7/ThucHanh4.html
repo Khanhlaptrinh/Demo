@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: inline-block;
+            text-align: left;
+        }
+        .container label {
+            display: flex;
+            border-collapse: collapse;
+            margin-left: 10px;
+        }
+        select, input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            display: inline-block;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            background-color: aqua;
+            color: white;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .menu-item {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="menu-item">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+    </div>
+
+    <div class="menu-item">
+        <label for="fromCurrency">From Currency</label>
+        <select id="fromCurrency">
+            <option value="VND">VietNam</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+
+    <div class="menu-item">
+        <label for="toCurrency">To Currency</label>
+        <select id="toCurrency">
+            <option value="VND">VietNam</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+
+
+    <div class="menu-item">
+        <button id="convertBtn">Convert</button>
+    </div>
+</div>
+
+<div id="result"></div>
+
+<script src="ThucHanh4.js"></script>
+
+</body>
+</html>
