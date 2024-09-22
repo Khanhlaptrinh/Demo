@@ -32,3 +32,4 @@ document.getElementById('convertBtn').addEventListener('click', function () {
     const convertedAmount = (amount * rate).toFixed(2);
     document.getElementById('result').innerText = `Result: ${convertedAmount} ${toCurrency}`;
 });
+

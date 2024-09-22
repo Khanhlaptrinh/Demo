@@ -8,13 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    <script !src="">
-        // const PI = 3.14;
-        //hoisting: Cho phép sử dụng trước và khai báo sau.
-        console.log(diemVan);
-        console.log(diemToan);
-        let demToan = 8;
-        var diemVan = 9;
+    <script>
+        // // const PI = 3.14;
+        // //hoisting: Cho phép sử dụng trước và khai báo sau.
+        // console.log(diemVan);
+        // console.log(diemToan);
+        // let demToan = 8;
+        // var diemVan = 9;
+        let day = parseInt(prompt("Nhap so ngay: "));
+        switch (day) {
+            case 1:
+                document.write("Chu nhat");
+                break;
+            case 2:
+                document.write("Thu 2");
+                break;
+            case 3:
+                document.write("Thu 3");
+                break;
+            case 4:
+                document.write("Thu 4");
+                break;
+            case 5:
+                document.write("Thu 5");
+                break;
+            case 6:
+                document.write("thu 6");
+                break;
+            case 7:
+                document.write("Thu 7");
+                break;
+            default:
+                document.write("Khong phai la ngay trong tuan");
+                break;
+        }
     </script>
 </body>
 </html>
