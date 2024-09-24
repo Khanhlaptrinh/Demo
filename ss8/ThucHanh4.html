@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  .container {
+    text-align: center;
+    margin-top: 50vh;
+  }
+  .container button {
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+  }
+</style>
+<body>
+    <div class="container">
+      <h1>Do you love me?</h1>
+      <button id="btn" onclick="love()">YES</button>
+      <button id="btn2" onmouseover="Nolove()">NO</button>
+    </div>
+
+</body>
+<script>
+  function love() {
+    alert("Yes. i love you");
+  }
+  function Nolove() {
+      let x = Math.round(Math.random() * window.innerWidth);
+      let y = Math.round(Math.random() * window.innerHeight);
+      document.getElementById("btn2").style.left = x + 'px';
+      document.getElementById("btn2").style.right = y + 'px';
+  }
+</script>
+</html>
