@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    <!--    Kiểm tra 1 số bất kì có phải là số hoàn hảo hay không-->
+    // Tổng các ước bằng chính nó.
+    // 6: 1,2,3
+
+    let a = +prompt("Nhap so can kiem tra: ");
+    // while (isNaN(a) || a <= 0) {
+    //     a = +prompt("Ban nhap khong phai la so hoac la 1 so am");
+    // }
+    // alert(a);
+
+    do {
+        a = +prompt("Ban nhap khong phai la so hoac la 1 so am");
+    } while (isNaN(a) || a <= 0)
+
+    let sum = 0;
+    for (let i = 1; i <= a/2; i++){
+        if (a % i === 0) {
+            sum += i;
+        }
+    }
+
+    if (sum === a) {
+        alert(`${a} la so hoan hao`);
+    } else {
+        alert(`${a} khong phai la so hoan hao`);
+    }
+</script>
+</body>
+</html>
