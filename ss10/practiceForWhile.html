@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    //  Bai 1:
+    //  Mã giả:
+    // B1: Sử dụng for để đếm số từ 1 -> 100.
+    // B2: Kiểm tra nếu i == 99 thì hiển thị thông báo.
+    // let i;
+    // for (i = 1; i <= 100; i++) {
+    //     document.write(`dem so: ${i} <br>`);
+    //     if (i === 99) {
+    //         document.write("Da hoan thanh");
+    //         break;
+    //     }
+    // }
+
+    //  Bai 2:
+    // let NhietDo = parseFloat(prompt("Nhap nhiet do cua ban: "));
+    // while (NhietDo > 100 || NhietDo < 20) {
+    //     if (NhietDo > 100) {
+    //         alert("Can tang nhiet do");
+    //     } else if (NhietDo < 20) {
+    //         alert("Can giam nhiet nhiet do");
+    //     } else {
+    //         alert("nhiet do binh thuong");
+    //     }
+    //     NhietDo = parseFloat(prompt("Nhập lại nhiệt độ: "));
+    // }
+
+    //Bai 3:
+    // Mã giả:
+    // B1: Cho cố định 2 số fibonacci 0, 1.
+    // B2: Dùng for để duyệt 20 số đầu tiên.
+    // console.log("0 1");
+    // let fn1 = 1, fn2 = 0;
+    // for (let i = 3; i <= 20; i++) {
+    //     let fn = fn1 + fn2;
+    //     fn2 = fn1;
+    //     fn1 = fn;
+    //     console.log(fn);
+    // }
+
+    //Bai 4:
+    // console.log("0 1");
+    // let fn1 = 1, fn2 = 0;
+    // for (let i = 3; i <= 20; i++) {
+    //     let fn = fn1 + fn2;
+    //     fn2 = fn1;
+    //     fn1 = fn;
+    //     if (fn % 5 !== 0) {
+    //         continue;
+    //     }
+    //     console.log(fn);
+    // }
+
+    //Bai 5:
+    // console.log("0 1");
+    // let fn1 = 1, fn2 = 0;
+    // let sum = fn1 + fn2;
+    // let count = 2;
+    // let fn;
+    // while (count < 20) {
+    //     fn = fn1 + fn2;
+    //     sum += fn;
+    //     fn2 = fn1;
+    //     fn1 = fn;
+    //     count++;
+    // }
+    // console.log(sum);
+
+    //Bai 6:
+//     Mã giả:
+//     B1: Dùng vòng lặp để lặp 30 số đầu tiên trong dãy vòng số tự nhiên.
+//     B2: Tạo biến tính tổng để tính các số khi xét vòng lặp
+//     let sum = 0;
+//     for (let i = 1; i <= 30; i++) {
+//         sum += i;
+//     }
+//     console.log(sum);
+
+    //Bai 7:
+//     Mã giả:
+//     B1: Chạy vòng lặp 1 -> 100.
+//     B2: Kiểm tra nếu số nào đó % 3 thì in ra Fizz. Nếu % 5 thì in ra Buzz.
+//     B3: Nếu có số % cho cả 3 và 5 thì in ra FizzBuzz.
+    let i;
+    for (i = 1; i <= 100; i++){
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+</script>
+</html>
