@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bai 1:
+//     Mã giả:
+//     B1: Nhap n.
+//     B2: Thuc hien vong lap de in day.
+//     B3: Tinh tong day fibonaci
+//     let n = +prompt("Nhap so day: ");
+//     let fn1 = 0, fn2 = 1;
+//     for (let i = 3; i <= n; i++) {
+//         let fn = fn1 + fn2;
+//         fn2 = fn1;
+//         fn1 = fn;
+//         console.log(fn);
+//     }
+
+    //Bai 2:
+//     Mã giả:
+//     B1: Nhap n
+//     B2: Vong lap chạy 1 -> n
+//     B3: Tạo biến để tính giai thừa.
+//     let n = +prompt("Nhap so n: ");
+//     let fac = 1, i;
+//     for (i = 1; i <= n; i++) {
+//       fac = fac * i;
+//     }
+//     console.log(fac);
+
+    //Bai 3:
+//     Mã giả:
+//     B1: Vòng lặp số lượng sao là 5 khi mỗi tầng sẽ tăng lên.
+//     B2: In số sao ra ngoài màn hình
+//     let i,j;
+//     for (i = 1; i <= 5; i++){
+//         for (j = 1; j <= i; j++) {
+//           document.write("*");
+//         }
+//         document.write("<br>");
+//     }
+    // In ngược tam giác
+    // let i,j;
+    // for (i = 5; i >= 1; i--) {
+    //     for (j = 1; j <= i; j++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
+
+    //Bai 4:
+    let n = +prompt("Nhap n: ");
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (i === 1 || i === n || j === 1 || j === n) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+
+    //Bai 5:
+    // let So_tien_gui = parseInt(prompt("so_tien_gui"));
+    // let so_thang = parseInt(prompt("so_thang"));
+    // let So_tien_thang = 0;
+    // if (so_thang === 1) {
+    //     So_tien_thang = (So_tien_gui * 0.38) / 365;
+    //     document.write(So_tien_thang);
+    // } else if (so_thang === 3) {
+    //     So_tien_thang = (So_tien_gui * 0.4) / 365;
+    //     document.write(So_tien_thang);
+    // } else if (so_thang === 6) {
+    //     So_tien_thang = (So_tien_gui * 0.52) / 365;
+    //     document.write(So_tien_thang);
+    // } else if (so_thang === 12) {
+    //     So_tien_thang = (So_tien_gui * 0.58) / 365;
+    //     document.write(So_tien_thang);
+    // } else if (so_thang === 18) {
+    //     So_tien_thang = (So_tien_gui * 0.6) / 365;
+    //     document.write(So_tien_thang);
+    // } else if (so_thang === 24) {
+    //     So_tien_thang = (So_tien_gui * 0.6) / 365;
+    //     document.write(So_tien_thang);
+    // } else {
+    //     document.write("Tao den tan nha m tim m");
+    //}
+
+    //Bai 6:
+
+</script>
+</body>
+</html>
