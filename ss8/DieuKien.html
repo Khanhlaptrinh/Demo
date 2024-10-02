@@ -77,6 +77,44 @@
   // }
 
   //Bai 5:
+  let tongDT = +prompt("Nhap tong doanh thu: ");
+  let hoahong = 0;
+  if (tongDT <= 100) {
+      hoahong = 0.05 * tongDT;
+      document.write(hoahong);
+  } else if (tongDT <= 300) {
+      hoahong = 0.1 * tongDT;
+      document.write(hoahong);
+  } else {
+      hoahong = 0.2 * tongDT;
+      document.write(hoahong);
+  }
+
+  //Bai 6:
+  let Phithue = 25000;
+  let phut = +prompt("Nhap so phut goi");
+  let tiendienthoai = 0;
+  if (phut > 200) {
+      tiendienthoai = (phut - 200) * 200 + 150 * 400 + 50 * 600;
+  } else if (phut > 50) {
+      tiendienthoai = (phut - 400) * 400 + 50 * 600;
+  } else {
+      tiendienthoai = phut * 600;
+  }
+  tong = tiendienthoai + Phithue;
+  document.write(tong);
+
+  //Bai 7:
+  let rate1, rate2, bill;
+  rate2 = 10;
+  rate1 = 5;
+  let unit = +prompt("Nhap so hang: ");
+  if (unit < 250) {
+      bill = unit * rate1;
+  } else {
+      bill = unit * rate2;
+  }
+  document.write(bill);
 
 </script>
 </body>
