@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bai 1:
+    // Mã giả:
+    // B1: Khởi tạo 1 mảng 10 phần tử.
+    // B2: tính và hiển thị có bao nhiêu số lớn 10.
+    // let arr = [10, 40, 3, 5, 9, 6];
+    // let count = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] >= 10) {
+    //         count++;
+    //         alert(`So lon hon 10 la: ${count}`);
+    //     } else {
+    //         break;
+    //     }
+    // }
+    //Bai 2:
+//  Mã gải:
+//     B1: Tạo mảng gồm 10 phần tử.
+//     B2: Tìm giá trị lớn nhất trong mảng.
+//     let arr = [10, 20, 4, 6, 98, 100, 30, 50, 40, 200];
+//     let max = arr[0];
+//     let index = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//             index = i;
+//         }
+//     }
+//     document.write(max);
+//     document.write("<br>");
+//     document.write(index);
+
+    //Bai 3:
+//     Mã giả:
+//     B1: Khởi tạo mảng số nguyên.
+//     B2: Hiển thị giá trị lớn nhất của mảng.
+//     B3: In ra giá trị trung bình của các phần tử mảng.
+//     let arr = [2, 4, 7, 10, 5, 9];
+//     let max = arr[0];
+//     let trungbinh = 0;
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//     }
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//         trungbinh = sum / arr.length;
+//     }
+//     document.write(max);
+//     document.write("<br>");
+//     document.write(trungbinh);
+
+    //Bai 4:
+//     Mã giả:
+//     B1: Khởi tạo/ nhập 1 mảng số nguyên.
+//     B2: Đảo ngược mảng vừa nhập
+    let n = +prompt("Nhap phan tu: ");
+    let arr = [];
+    for (let i = 0; i< n; i++) {
+        let phantu = +prompt(`Nhap phan tu thu ${i + 1}: `);
+        arr.push(phantu);
+    }
+    document.write(arr);
+    document.write("<br>");
+    for (let i = n; i >= 0; i--) {
+        document.write(arr[i]);
+    }
+
+    //Bai 5:
+//     Mã giả:
+//     B1:
+</script>
+</body>
+</html>
