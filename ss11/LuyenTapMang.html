@@ -63,21 +63,75 @@
 //     Mã giả:
 //     B1: Khởi tạo/ nhập 1 mảng số nguyên.
 //     B2: Đảo ngược mảng vừa nhập
-    let n = +prompt("Nhap phan tu: ");
-    let arr = [];
-    for (let i = 0; i< n; i++) {
-        let phantu = +prompt(`Nhap phan tu thu ${i + 1}: `);
-        arr.push(phantu);
-    }
-    document.write(arr);
-    document.write("<br>");
-    for (let i = n; i >= 0; i--) {
-        document.write(arr[i]);
-    }
+//     let arr = [1, 5, 7, 9, 2, 7];
+//     let first = 0;
+//     let last = arr.length - 1;
+//     while (first < last) {
+//         let temp = arr[first];
+//         arr[first] = arr[last];
+//         arr[last] = temp;
+//
+//         first++;
+//         last--;
+//     }
+//     console.log("Mang dao nguoc: " + arr);
 
     //Bai 5:
 //     Mã giả:
-//     B1:
+//     B1: Khoi tao mang
+//     B2: Neu < 0 thi dem mang co bn so am.
+//     let arr = [1, 5, 7,  9, -2, 0, -1, 10, -6];
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < 0) {
+//             count++;
+//         }
+//     }
+//     document.write(count);
+
+    //Bai 6:
+//     Mã giả:
+//     B1: Nhập 1 mảng 10 phần tử. Nhập tạo V phần tử số nguyên.
+//     B2: Dùng if..else để so sánh arr === V nếu bằng V is in the array. Ngược lại
+//     let arr = [2, 5, 8, 9, 10, 55, 22];
+//     let v = +prompt("Nhap phan tu can kiem tra trong mang: ");
+//     let check = false;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === v) {
+//             check = true;
+//             break;
+//         }
+//     }
+//     if (check) {
+//         document.write("V is the array");
+//     } else {
+//         document.write("v isn't the array");
+//     }
+
+    //Bai 7:
+    let arr = [2, 5, 7, 10, 30, 29];
+    let v = 5;
+    let index = -1;
+    let length = arr.length - 1;
+    for (let i = 0; i < length; i++) {
+        if (arr[i] === v) {
+            index = i;
+            break;
+        }
+    }
+    if (index === -1) {
+        alert("Khong ton tai v");
+    } else {
+        //Xoa từ vị trí index với mảng là phần tử thứ 1.
+        arr.splice(index, 1);
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+
+    //Bai 8:
+
 </script>
 </body>
 </html>

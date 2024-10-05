@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Enter keyword:
+<input type="text" name="" id="keyword" />
+<button onclick="Search()">Search</button>
+<p id="result"></p>
+</body>
+<script>
+  function search() {
+    const en = ['hi', 'apple', 'orange', 'Banana'];
+    const vn = ['xin chao', 'Qua tao', 'Qua cam', 'Qua chuoi'];
+
+    //Lay gia tri nguoi dung tim kiem
+    let keyword = document.getElementById("keyword").value;
+
+    //b2 tim kiem gia tri nguoi dung nhap vao trong mang en
+    let index = -1;
+    for (let i = 0; i < en.length; i++) {
+      // === so sánh về giá trị: 5 == "5" -> true;
+      if (en[i] === keyword) {
+        index = i;
+        break;
+      }
+    }
+
+    if (index === -1) {
+      document.getElementById("result").innerHTML = 'No date';
+    } else {
+      document.getElementById("result").inertHTML = vn[index];
+    }
+  }
+</script>
+</html>
