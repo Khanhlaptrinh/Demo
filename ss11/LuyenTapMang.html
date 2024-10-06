@@ -109,29 +109,55 @@
 //     }
 
     //Bai 7:
-    let arr = [2, 5, 7, 10, 30, 29];
-    let v = 5;
-    let index = -1;
-    let length = arr.length - 1;
-    for (let i = 0; i < length; i++) {
-        if (arr[i] === v) {
-            index = i;
-            break;
-        }
-    }
-    if (index === -1) {
-        alert("Khong ton tai v");
-    } else {
-        //Xoa từ vị trí index với mảng là phần tử thứ 1.
-        arr.splice(index, 1);
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
-    }
+    // let arr = [2, 5, 7, 10, 30, 29];
+    // let v = 5;
+    // let index = -1;
+    // let length = arr.length - 1;
+    // for (let i = 0; i < length; i++) {
+    //     if (arr[i] === v) {
+    //         index = i;
+    //         break;
+    //     }
+    // }
+    // if (index === -1) {
+    //     alert("Khong ton tai v");
+    // } else {
+    //     //Xoa từ vị trí index với mảng là phần tử thứ 1.
+    //     arr.splice(index, 1);
+    // }
+    //
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
 
     //Bai 8:
+//     Mã giả:
+//     B1: Khởi tạo hoặc nhập 1 mảng số nguyên gồm 10 phần tử.
+//     B2: Sắp xếp mảng theo thứ tự giảm dần. Hiển thị mảng sắp xếp.
+//     let arr = [2, 6, 8, 9, 10, 30, 50];
+//     arr.sort(function (a ,b) {
+//         return b - a;
+//     });
+//     document.write(arr);
 
+    //Bai 9:
+    //Nhap mang a:
+    let an = +prompt("Nhap an: ");
+    let a = [];
+    for (let i = 0; i < an; i++) {
+        let phantu = +prompt(`Nhap phan tu thu ${i + 1}: `);
+        a.push(phantu);
+    }
+    //Nhap mang b:
+    let bn = +prompt("Nhap bn: ");
+    let b = [];
+    for (let j = 0; j < bn; j++) {
+        let phantu2 = +prompt(`Nhap phan tu thu ${j + 1}: `);
+        b.push(phantu2);
+    }
+    //Noi 2 mang c:
+    let c = a.concat(b);
+    document.write(c);
 </script>
 </body>
 </html>
