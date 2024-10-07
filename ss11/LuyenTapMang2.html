@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bai 1:
+    // let a = [
+    //     [1, 2, 1, 24],
+    //     [8, 11, 9, 4],
+    //     [7, 0, 7, 27],
+    //     [7, 4, 28, 14],
+    //     [3, 10, 26, 7]
+    // ];
+    // for (let i = 0; i < a.length; i++) {
+    //     console.log(`row ${i}`);
+    //     for (let j = 0; j < a.length; j++) {
+    //         console.log(" " + a[i][j]);
+    //     }
+    // }
+
+    //Bai 2:
+    // let arr = [ 'c', 's', 'c', '2', '6', '1' ];
+    // let first = 0;
+    // let last = arr.length - 1;
+    // while (first < last) {
+    //     let temp = arr[first];
+    //     arr[first] = arr[last];
+    //     temp = arr[last];
+    //     first++;
+    //     last--;
+    // }
+    // let chuoi = arr.reverse();
+    // document.write(chuoi);
+
+    //Bai 3:
+//     Mã giả:
+//     B1: Khai báo mảng ký tự và kích thước của mảng.
+//     B2: Đếm số ký tự trong mảng. Cách đếm dùng count để đếm từng phần tử trong mảng.
+//     let char = [];
+//     let n = +prompt("Nhap kich thuoc cua mang: ");
+//     let count = 0;
+//     // let isPrime = true;
+//     for (let i = 0; i < n; i++) {
+//         let phantu = prompt(`Nhap phan tu thu ${i + 1}: `);
+//         char.push(phantu);
+//     }
+//     for (let i = 0; i < char.length; i++) {
+//         // if (isPrime) {
+//         //     count++;
+//         // } else {
+//         //     document.write(char);
+//         // }
+//         if (!isNaN(char[i]) && char[i] !== '') {
+//             count++;
+//         }
+//     }
+//     document.write(char);
+//     document.write("<br>");
+//     document.write(count);
+
+    //Bai 4:
+    // let char = ['v', 't', 'e', 'w', 'g'];
+    // let count = 0;
+    // for (let i = 0; i < char.length; i++) {
+    //     if (char[i] !== ''){
+    //         count++;
+    //     }
+    // }
+    // document.write(count);
+
+    //Bai 5:
+    // Mã giả:
+    // B1: Khởi tạo 2 chuỗi
+    // B2: Kiểm tra xem 2 chuỗi có giống nhau không??
+    // let arr1 = [2, 5, 7, 0, 1, 6];
+    // let arr2 = [2, 4, 10, 3, 7, 7, 40];
+    // let count = 0;
+    // for (let i = 0; i < arr1.length; i++) {
+    //     for (let j = 0; j < arr2.length; j++) {
+    //         if (arr1[i] === arr2[j]) {
+    //             count++;
+    //         }
+    //     }
+    // }
+    // document.write(count);
+
+    //Bai 6:
+//     Mã giả:
+//     B1: Nhập vào 1 mảng ký tự.
+//     B2: Tìm tất cả các ký tự là (-) -> (_)
+    let char = [];
+    let n = prompt("Nhap kich thuoc cua mang: ");
+    let i;
+    for (i = 0; i < n; i++) {
+        let Kytu = prompt(`Nhap phan tu thu ${i + 1}: `);
+        char.push(Kytu);
+    }
+
+    for (i = 0; i < n; i++) {
+        if (char[i] === '-') {
+            char[i] = '_';
+        }
+    }
+    document.write(char);
+</script>
+</body>
+</html>
