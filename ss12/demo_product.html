@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  table {
+    width: 500px;
+  }
+  tr {
+    height: 50px;
+
+  }
+  tr:nth-child(even) {
+    background-color: lightblue;
+  }
+  td {
+    text-align: center;
+    width: 200px;
+  }
+  button {
+    background-color: lawngreen;
+    color: white;
+    width: 70px;
+    height: 30px;
+  }
+</style>
+<body>
+<div style="width: 610px; height: 100px; background-color: #f4f4f4;">
+  <div style="padding-top: 40px; padding-left: 40px">
+    <button id="Add"></button>
+  </div>
+</div>
+<div id="result"></div>
+<script>
+  function display(products) {
+    let result = "<table>"
+    for (let i = 0; i < products.length; i++) {
+      result += "<tr>"
+      result += "<td>${products[i]}</td>"
+      result += "<td><button>Edit</button></td>"
+      result += "<td><button onclick='deleteProducts(${i})'>Delete</button></td>"
+      result += "</tr>"
+    }
+    result += "</table>"
+    document.getElementById("result").innerHTML = result;
+
+  }
+
+  document.getElementById("add").addEventListener("click", function() {
+    let productAdd = document.getElementById("productAdd").value;
+    if (productAdd.length > 5 && productAdd.length < 100) {
+      products.push(productAdd);
+      display(products);
+      document.getElementById("productAdd").value = "";
+      alert("Them moi thanh cong");
+    } else {
+      alert("Ten san pham phai du tu 5 den 100 ky tu");
+    }
+
+
+  })
+
+  function deleteproducts() {
+    let isDelete = prompt(`ban co muon chac muon xoa san pham khong ${products[i]}?`);
+    if (isDelete) {
+      products.splice(i, 1);
+      display(products);
+      alert("Xoa thanh cong");
+    }
+  }
+  let products = ["Nokia", "iphone"];
+  // let arr = ["Xoai", "Mit"];
+  display(products);
+</script>
+</body>
+</html>

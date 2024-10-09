@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num"> <button onclick="checknumIsPrime()">Check</button>
+<button onclick="showPrime()">Show</button>
+<button onclick="showlessnum()">Show less num</button>
+<p id="result"></p>
+</body>
+<script>
+<!--  Kiểm tra 1 số có phải là số nguyên tố hay không?-->
+  function checknumIsPrime() {
+    let isPrime = true;
+    let num = +document.getElementById("num").value;
+    if (isPrime(num)) {
+      alert(`${num} la so nguyen to`);
+    } else {
+      alert(`${num} khong la so nguyen to`);
+    }
+  }
+
+//   Thêm 1 nút show, khi người dùng nhấn nút show thay vì kiểm tra số đó thì hiển thị
+  function showPrime() {
+    let countPrime = +document.getElementById("num").value;
+    let num = 2;
+    let count = 0;
+    let result = "";
+    while (count < countPrime) {
+      if (isPrime(num)) {
+          result += (`${num} la so nguyen to <br>`);
+        count++;
+      }
+      num++;
+    }
+    document.getElementById('result').innerHTML = result;
+  }
+
+  function showlessnum() {
+    let maxPrime = +document.getElementById('num').value;
+    let result = '';
+    for (let num = 2; num < maxPrime; num++) {
+      if (isPrime(num)) {
+        result += (`${num} la so nguyen to <br>`);
+      }
+    }
+    document.getElementById('result').innerHTML = result;
+  }
+
+  function isPrime(num) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+//   Cặp số hoàn hảo: tổng ước của số này bằng số còn lại.
+
+//   Tính giai thừa: S! = 1 * 2 * 3 * 4 * 5
+  function calculateFactorial(n) {
+    if (n === 1) return 1;
+    return n * calculateFactorial(n - 1);
+  }
+  alert(calculateFactorial(5));
+</script>
+</html>
