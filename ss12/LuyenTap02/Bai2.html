@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function are(banKinh) {
+    //     Tinh dien tich
+        return 2 * 3.14 * banKinh * banKinh;
+    }
+    function Curicu(banKinh) {
+        //     Tinh chu vi
+        return 2 * banKinh * 3.14;
+    }
+
+    let area = +prompt("Nhap ban kinh can tinh dien tich: ");
+    are(area);
+    document.write("Dien tich hinh tron la: " + are(area) + "<br>");
+
+    let Curicu2 = +prompt("Nhap ban kinh hinh tron can tinh chu vi: ");
+    Curicu(Curicu2);
+    document.write("Chu vi hinh tron la: " + Curicu(Curicu2));
+</script>
+</body>
+</html>

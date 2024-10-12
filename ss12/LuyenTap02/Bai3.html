@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function factorial(n) {
+    if (n === 1) return 1;
+    return n * factorial(n - 1);
+  }
+
+  let fac = +prompt("nhap so can tinh: ");
+  do {
+    fac = +prompt("So ban nhap khong phai la so. Moi nhap lai: ");
+  } while (isNaN(fac) || fac < 0)
+  factorial(fac);
+  document.write(`so ${fac} co giai thua la: ` + factorial(fac));
+</script>
+</body>
+</html>

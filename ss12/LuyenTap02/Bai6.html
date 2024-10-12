@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPosiInteget(num) {
+        if (num > 0 && Number.isInteger(num)) {
+            return true;
+        }
+        return false;
+    }
+
+    let number;
+    number = +prompt("Nhap so can kiem tra: ");
+    while (isNaN(number) || number <= 0 || !Number.isInteger(number)) {
+        number = +prompt("Ban nhap khong phai la so. Moi ban nhap lai: ");
+    }
+
+    if (checkPosiInteget(number)) {
+        alert(`So ${number} la so nguyen duong`);
+    } else {
+        alert(`So ${number} khong phai la so nguyen`);
+    }
+</script>
+</body>
+</html>

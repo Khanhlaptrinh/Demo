@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swapArray(arr) {
+        let first = 0;
+        let last = arr.length - 1;
+        while (first < last) {
+            let temp = arr[first];
+            arr[first] = arr[last];
+            arr[last] = temp;
+            first++;
+            last--;
+        }
+        return arr;
+    }
+
+    let result = swapArray([2, 5, 7, 9, 2]);
+    document.write(`mang bi dao nguoc:` +result.join());
+</script>
+</body>
+</html>

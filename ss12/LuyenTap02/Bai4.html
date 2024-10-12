@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkNum(num) {
+        // // Kiểm tra nếu giá trị là một số hợp lệ (không phải NaN và là số hữu hạn)
+        return !isNaN(num) && isFinite(num);
+    }
+
+    let number;
+    do {
+        number = prompt("Nhap so can kiem tra: ");
+        // Chuyển giá trị nhập vào sang dạng số để kiểm tra
+        if (!checkNum(+number)) {
+            prompt("ban nhap khong phai la so. Moi nhap lai: ");
+        }
+    } while (!checkNum(number));
+    // Chuyển đổi thành số (sau khi đã chắc chắn là số hợp lệ)
+    number = +number;
+
+    document.write(`${number} la so`);
+</script>
+</body>
+</html>

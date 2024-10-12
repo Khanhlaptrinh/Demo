@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function hoanvi(a, b) {
+    let temp;
+    temp = a;
+    a = b;
+    b = temp;
+  }
+
+  let num1 = +prompt("Nhap so a: ");
+  let num2 = +prompt('Nhap so b: ');
+  hoanvi(num1, num2);
+  document.write(`2 so khi doi: `);
+  document.write("<br>");
+  document.write(`So ${num1}, So ${num1}`);
+</script>
+</body>
+</html>
