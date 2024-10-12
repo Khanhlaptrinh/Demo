@@ -33,12 +33,26 @@
       this.year = year;
     }
 
+  //   Phuong thuc setDate()
+      this.setDate = function () {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+      }
+
+  //     Phuong thuc toString()
+      this.toString = function () {
+          let stringDay = this.day.toString(2, '0');
+          let stringMonth = this.month.toString(2, '0');
+          return stringDay + "/" + stringMonth + "/" + this.year;
+      }
   };
   let date = new MyDate(2, 2, 2007);
   let day = date.getDay();
   let month = date.getMonth();
   let year = date.getYear();
   alert(day + "/" + month + "/" + year);
+
 </script>
 </body>
 </html>
