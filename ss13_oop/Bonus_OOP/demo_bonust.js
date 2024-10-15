@@ -28,8 +28,8 @@ let objectName = new NameClass();
 lưu ý:
 * */
 
-let rec1 = new Rectangle(5, 10);
-let rec2 = new Rectangle(5, 10);
+let rec1 = new Rectangle2(5, 10);
+let rec2 = new Rectangle2(5, 10);
 
 document.write(`Chu vi hinh chu nhat 1:` + rec1.getPerimeter());
 document.write("<br>");
