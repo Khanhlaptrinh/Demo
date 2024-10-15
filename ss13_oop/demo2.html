@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Preson {
+    id;
+    name;
+    address;
+    phone;
+    dob;
+
+      constructor(id, name, address, phone, dob, point) {
+          this.id = id;
+          this.address = address;
+          this.name = name;
+          this.phone = phone;
+          this.dob = dob;
+          this.point = point;
+      }
+
+      calculatorPoint () {
+          return (this.point * 4) / 10;
+      }
+
+      toString() {
+          return `ten la ${this.name}, dia chi nha: ${this.address}`;
+      }
+  }
+
+  class Student extends Preson {
+      classroom;
+
+      constructor(id, name, address, phone, dob) {
+          super(id, name, address, phone, bob);
+          this.classroom = classroom;
+      }
+  }
+  let student = new Student(1, "haiTT", "iphone16", "123", "01/01/2000")
+  console.log(student);
+  console.log(student.calculatorPoint())
+</script>
+</body>
+</html>
