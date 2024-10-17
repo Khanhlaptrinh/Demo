@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function TangGiam(arr) {
+        let Tang = true;
+        let Giam = true;
+        if (arr.length <= 1) return true;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > arr[i - 1]) {
+                Tang = false;
+            } else if (arr[i] < arr[i - 1]){
+                Giam = false;
+            } else {
+                return false;
+            }
+        }
+        return Tang || Giam;
+    }
+
+    let arr1 = [1, 4, 5, 7, 9];
+    let arr2 = [2, 2];
+    // let result = TangGiam(arr1);
+    let result = TangGiam(arr2);
+    document.write(result);
+</script>
+</body>
+</html>

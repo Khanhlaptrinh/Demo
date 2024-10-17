@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function ArrayDep(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+
+    let Trai = 0;
+    for (let i = 0; i < arr.length; i++) {
+      let Phai = sum - Trai - arr[i];
+
+      if (Trai === Phai) {
+        return true;
+      }
+
+      sumTrai += arr[i];
+    }
+
+    return false;
+  }
+
+  console.log(ArrayDep([1, 2, 3, 3]));
+</script>
+</body>
+</html>
